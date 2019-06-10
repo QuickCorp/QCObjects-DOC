@@ -12,6 +12,8 @@ Package('org.quickcorp.custom.controllers',[
 	  },
 		done:function(){
 			var controller = this;
+			controller.dependencies.push(New(SourceJS,{external:false,url:'js/prism-okaidia.js',done:function(){}}));
+			controller.dependencies.push(New(SourceCSS,{external:false,url:'css/prism-okaidia.css',done:function(){}}));
 
 			/*
 			Timer.thread({
