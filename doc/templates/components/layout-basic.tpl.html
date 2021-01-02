@@ -25,14 +25,14 @@
 </style>
 
 <header>
-  <component name="header" controllerClass="HeaderController">
-    <routing path="#signup" name="blank"></routing>
-    <routing path="#signin" name="blank"></routing>
-    <routing path="#page1" name="blank"></routing>
-    <routing path="#page2" name="blank"></routing>
-    <routing path="#page3" name="header"></routing>
-    <routing path="#" name="header"></routing>
-    <routing path="" name="header"></routing>
+  <component name="blank" controllerClass="HeaderController">
+    <routing path="^#signup$" name="blank"></routing>
+    <routing path="^#signin$" name="blank"></routing>
+    <routing path="^#page1$" name="blank"></routing>
+    <routing path="^#page2$" name="blank"></routing>
+    <routing path="^#page3$" name="header"></routing>
+    <routing path="^#$" name="header"></routing>
+    <routing path="^$" name="header"></routing>
 </component>
 </header>
 <aside>

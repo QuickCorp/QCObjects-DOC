@@ -1,6 +1,4 @@
 # Installing
-------------
-
 
 ## Using QCObjects with Atom:
 
@@ -143,4 +141,3 @@ You don't need to minify QCObjects, but if you still want to use the minified co
 ```
 
 Again, Change 2.1.420 to the number of the version that you want to use.
-
