@@ -168,7 +168,10 @@ nav>component>span.closebtn {
   position: fixed;
   display: none;
   top: 0;
-  left: 30%;
+  max-width: 45px;
+  max-height: 45px;
+  border-radius: 50px;
+  right: 67%;
   font-size: 36px;
   margin-left: 50px;
 }

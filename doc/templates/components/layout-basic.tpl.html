@@ -16,21 +16,25 @@
 
   }
 
-  main {width:100%;min-height:120%;}
-  main > section{min-height:120%;}
-
   body, header {
     background-color: #f7f7f7 !important;
   }
+
+  header {
+    background: linear-gradient(315deg, #ffffff, #e6e6e6) !important;
+  }
+  body {
+    background: linear-gradient(315deg, #ffffff, #e8e8e8) !important;
+  }
+
+  main {width:100%;min-height:120%;}
+  main > section{min-height:120%;}
+
 </style>
 
 <header>
   <component name="blank" controllerClass="HeaderController">
-    <routing path="^#signup$" name="blank"></routing>
-    <routing path="^#signin$" name="blank"></routing>
-    <routing path="^#page1$" name="blank"></routing>
-    <routing path="^#page2$" name="blank"></routing>
-    <routing path="^#page3$" name="header"></routing>
+    <routing path="^#(.*)$" name="blank" ></routing>
     <routing path="^#$" name="header"></routing>
     <routing path="^$" name="header"></routing>
 </component>

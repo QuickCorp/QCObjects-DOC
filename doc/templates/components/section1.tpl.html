@@ -50,7 +50,8 @@
 
 </style>
 <article>
-    <component name="markdown/en/page_en_0" tplextension="md" componentClass="MarkdownComponent" controllerClass="MarkdownController">
+    <component name="blank" tplextension="md" componentClass="MarkdownComponent" controllerClass="MarkdownController">
+      <routing path="#author" name="markdown/en/AUTHOR" ></routing>
       <routing path="#installing" name="markdown/en/page_en_19" ></routing>
       <routing path="#essentials" name="markdown/en/page_en_20" ></routing>
       <routing path="#qcobject" name="markdown/en/page_en_20_1_1" ></routing>
@@ -96,9 +97,8 @@
       <routing path="#sdk-i18n-messages" name="markdown/en/page_en_20_3_6" ></routing>
       <routing path="#the-qcobjects-http2-built-in-server" name="markdown/en/page_en_20_4" ></routing>
       <routing path="#qcobjects-cli-tool" name="markdown/en/page_en_23" ></routing>
-
-      <routing path="#" name="blank" ></routing>
-      <routing path="" name="blank" ></routing>
+      <routing path="^#$" name="markdown/en/page_en_1" ></routing>
+      <routing path="^$" name="markdown/en/page_en_1" ></routing>
     </component>
 
 </article>

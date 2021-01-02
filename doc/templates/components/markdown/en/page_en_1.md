@@ -1,5 +1,5 @@
 # QCObjects
-------------------------------------
+
 Welcome to [QCObjects](https://qcobjects.dev). An Open-source framework that empowers full-stack developers to make micro-services and micro-frontends into an N-Tier architecture.
 
 With QCObjects devlopers are also able to code front-end and back-end together using a common syntax in pure JavaScript. It is cross-browser, cross-platform and cross-frame.
@@ -14,8 +14,8 @@ This repository and readme is hosted at [https://qcobjects.dev](https://qcobject
 
 Check out the official page of [QCObjects](https://qcobjects.com) at https://qcobjects.com
 
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to info@quickcorp.cl.
+This project adheres to the Contributor Covenant [code of conduct](https://github.com/QuickCorp/QCObjects/blob/master/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to info@quickcorp.cl.
 
 **Contributors are welcome!**
 
-You can contribute to [QCObjects](https://qcobjects.dev) following the set of guidelines expressed in the file [CONTRIBUTING.md](CONTRIBUTING.md)
+You can contribute to [QCObjects](https://qcobjects.dev) following the set of guidelines expressed in the file [CONTRIBUTING.md](https://github.com/QuickCorp/QCObjects/blob/master/CONTRIBUTING.md)
