@@ -40,7 +40,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #111;
 }
 
 /* Inline code */
@@ -123,4 +123,3 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
-
