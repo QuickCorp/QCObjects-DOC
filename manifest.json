@@ -1,6 +1,6 @@
 {
-  "name": "QCObjects New App",
-  "short_name": "qcobjects_newapp",
+  "name": "Introduction to QCObjects",
+  "short_name": "qcobjects-docs",
   "theme_color": "rgb(1,1,1)",
   "background_color": "rgb(1,1,1)",
   "display": "standalone",
@@ -68,12 +68,12 @@
   "prefer_related_applications": false,
   "related_applications": [{
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.example.qcobjects_newapp",
-      "id": "com.example.qcobjects_newapp"
+      "url": "https://play.google.com/store/apps/details?id=com.example.qcobjects_docs",
+      "id": "com.example.qcobjects_docs"
     },
     {
       "platform": "itunes",
-      "url": "https://itunes.apple.com/app/qcobjects_newapp/id123456789"
+      "url": "https://itunes.apple.com/app/qcobjects_docs/id123456789"
     }
   ]
 }
