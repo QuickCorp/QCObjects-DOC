@@ -1,4 +1,5 @@
 <style>
+ul, li {display: block;}
 li:hover {
   background: white;
   cursor: pointer;
@@ -20,12 +21,18 @@ ul li:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
-  display: block;
+  display: inline-block;
+  margin: 0 auto;
+  width: 95%;
 }
 
 ul li ul li {
   clear: both;
   width: 100%;
+  padding: 1%;
+}
+nav details ul li {
+  overflow-x: hidden;
 }
 </style>
 <span class="closebtn" onclick="global.sideNavController.toggle()"></span>
@@ -34,9 +41,9 @@ ul li ul li {
     <summary>Main</summary>
     <ul>
       <li><a onclick="global.sideNavController.close()" href="#">Main</a></li>
-
     </ul>
   </details>
+  <!--
 <details open>
     <summary>Register</summary>
     <ul>
@@ -52,4 +59,5 @@ ul li ul li {
       <li><a onclick="global.sideNavController.close()" href="#page3">Page 3</a></li>
     </ul>
 </details>
+-->
 </div>

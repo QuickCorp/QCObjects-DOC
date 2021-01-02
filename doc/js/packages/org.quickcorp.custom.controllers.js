@@ -11,21 +11,6 @@ Package("org.quickcorp.custom.controllers",[
       },
         done:function(){
 
-            /*
-            Timer.thread({
-              duration:300,
-              timing(timeFraction,elapsed){
-                return timeFraction;
-              },
-              intervalInterceptor(progress){
-                                if (progress>=100 && !Component._bindroute.__assigned){
-                                    controller.component.route();
-                                }
-              }
-          });
-            */
-
-
         }
     }),
     Class("PWAController",Object,{
@@ -63,8 +48,13 @@ Package("org.quickcorp.custom.controllers",[
     }
     this.component.body.style.width="35%";
     this.component.body.style.overflowX="visible";
-    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.shadowRoot.subelements("main").map(main=>main.style.left="35%"));
-    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.shadowRoot.subelements("main").map(main=>main.style.width="65%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("main").map(main=>main.style.left="35%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("main").map(main=>main.style.width="65%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.left="35%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.width="65%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.position="relative"));
+    global.componentsStack.filter(component=>component.name==="layout-basic")[0].subcomponents.filter(component=>component.name==="appbar").map(component=> component.shadowRoot.subelements("component[name=topmenu]").map(topmenu=>topmenu.style.left="40%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic")[0].subcomponents.filter(component=>component.name==="appbar").map(component=> component.shadowRoot.subelements("component[name=topmenu]").map(topmenu=>topmenu.style.width="60%"));
     this.component.body.parentElement.subelements(".navbtn")[0].style.display="none";
     this.component.body.parentElement.subelements(".closebtn")[0].style.display="block";
     this.visibility = true;
@@ -76,8 +66,13 @@ Package("org.quickcorp.custom.controllers",[
     }
     this.component.body.style.width="0px";
     this.component.body.style.overflowX="hidden";
-    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.shadowRoot.subelements("main").map(main=>main.style.left="0"));
-    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.shadowRoot.subelements("main").map(main=>main.style.width="100%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("main").map(main=>main.style.left="0"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("main").map(main=>main.style.width="100%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.left="0"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.width="100%"));
+    global.componentsStack.filter(component=>component.name==="layout-basic").map(component=> component.body.subelements("header").map(header=>header.style.position=""));
+    global.componentsStack.filter(component=>component.name==="layout-basic")[0].subcomponents.filter(component=>component.name==="appbar").map(component=> component.shadowRoot.subelements("component[name=topmenu]").map(topmenu=>topmenu.style.left="55px"));
+    global.componentsStack.filter(component=>component.name==="layout-basic")[0].subcomponents.filter(component=>component.name==="appbar").map(component=> component.shadowRoot.subelements("component[name=topmenu]").map(topmenu=>topmenu.style.width="100%"));
     this.component.body.parentElement.subelements(".navbtn")[0].style.display="block";
     this.component.body.parentElement.subelements(".closebtn")[0].style.display="none";
     this.visibility = false;
@@ -99,6 +94,15 @@ Package("org.quickcorp.custom.controllers",[
           controller.close();
       });
       //TODO: Implement
+
+    }
+  }),
+  Class('MarkdownController',Controller,{
+    dependencies:[],
+    done: function (){
+      var controller = this;
+      controller.dependencies.push(New(SourceJS,{external:false,url:'doc/js/prism-okaidia.js',done:function(){}}));
+      controller.dependencies.push(New(SourceCSS,{external:false,url:'doc/css/prism-okaidia.css',done:function(){}}));
 
     }
   }),

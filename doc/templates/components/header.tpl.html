@@ -1,6 +1,12 @@
+<style>
+ component[name=card]{
+   cursor: pointer;
+ }
+</style>
 <div>
-<img alt="logo" src="doc/img/placeholder.svg" lazy-src="doc/img/logo-qcobjects.svg" width="350px">
-<a style="margin:0 auto;" href="https://app.netlify.com/start/deploy?repository=https://github.com/QuickCorp/qcobjects-neumorphism">
-    <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
-</a>
+  <component name="grid" template-source="none">
+    <component onclick="location.href='#essentials'" name="card" data-image="qcobjects-essentials.png" data-title="Essentials" data-description="Basic elements, reference & more" ></component>
+    <component onclick="location.href='#installing'" name="card" data-image="installing-qcobjects.png" data-title="Installing" data-description="All the ways possible to install it" ></component>
+    <component onclick="location.href='#the-qcobjects-http2-built-in-server'" name="card" data-image="qcobjects-cli.png" data-title="CLI Tool & Back-End Server" data-description="CLI commands and options for the HTTP2 Built-In Server" ></component>
+  </component>
 </div>
