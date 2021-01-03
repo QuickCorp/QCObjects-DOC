@@ -162,6 +162,7 @@ nav>button.navbtn {
 
 nav>button.navbtn:after {
   content: '\2630';
+  cursor: pointer;
 }
 
 nav>component>span.closebtn {
@@ -178,6 +179,7 @@ nav>component>span.closebtn {
 
 nav>component>span.closebtn:after {
   content: "\00d7";
+  cursor: pointer;
 }
 
 nav .navcontent {
