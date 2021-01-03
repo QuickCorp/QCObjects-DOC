@@ -4,7 +4,7 @@
 
 - [Installing](#installing)
 - [Essentials](#essentials)
-	- [QC_Object](#qcobject)
+	- [QCObjects Object](#qcobjects)
 	- [ComplexStorageCache](#complexstoragecache)
 	- [asyncLoad](#asyncload)
 	- [Class](#class)
@@ -59,6 +59,7 @@
 	- [SDK Misc Tools](#sdk-misc-tools)
 	- [SDK Views](#sdk-views)
 	- [SDK i18n messages](#sdk-i18n-messages)
+- [QCObjects CLI Tool](#qcobjects-cli-tool)
 - [The QCObjects HTTP2 Built-In Server](#the-qcobjects-http2-built-in-server)
 	- [Start serving your files with QCObjects](#start-serving-your-files-with-qcobjects)
 	- [Principals of an N-Tier or Multitier architecture](#principals-of-an-n-tier-or-multitier-architecture)
@@ -68,10 +69,5 @@
 	- [The QCObjects Microservice Class and Package](#the-qcobjects-microservice-class-and-package)
 	- [Generating a Self-Signed Certificate with QCObjects](#generating-a-self-signed-certificate-with-qcobjects)
 	- [Working with a Letsencrypt HTTPS certificate, Certbot and QCObjects](#working-with-a-letsencrypt-https-certificate-certbot-and-qcobjects)
-- [QCObjects CLI Tool](#qcobjects-cli-tool)
-	- [Usage](#usage)
-	- [Options](#options)
-	- [Commands](#commands)
-	- [Use:](#use)
 
 <!-- /TOC -->
