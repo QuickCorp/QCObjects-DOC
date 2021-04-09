@@ -1,4 +1,4 @@
-# Cast
+### Cast
 
 Use the Cast method of any DOM element to get the properties of another type of object. This is useful to transform an object type to another giving more flexibility in your code.
 

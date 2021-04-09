@@ -1,4 +1,4 @@
-# Import
+### Import
 Imports a package from another JS file
 
 #### Usage:

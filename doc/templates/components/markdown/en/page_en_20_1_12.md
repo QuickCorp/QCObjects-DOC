@@ -1,4 +1,4 @@
-# CONFIG
+### CONFIG
 
 CONFIG is a smart class that manages the global settings of your application. You can get the properties either from a config.json or from the memory previously saved by a set() call.
 

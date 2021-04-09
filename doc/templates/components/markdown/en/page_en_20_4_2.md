@@ -1,4 +1,4 @@
-# Principals of an N-Tier or Multitier architecture
+### Principals of an N-Tier or Multitier architecture
 
 QCObjects was designed to work into a professional environment. There are many ways and paradigms to use when you define your software architecture. One recommended is using a Multitier or N-Tier architecture.
 

@@ -1,4 +1,4 @@
-# Backend settings in config.json
+### Backend settings in config.json
 
 You can also use config.json in the backend side to make some tunning and custom settings for backend, specially useful for making the microservice routes.
 

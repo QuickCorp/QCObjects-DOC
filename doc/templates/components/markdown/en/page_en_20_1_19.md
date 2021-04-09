@@ -1,4 +1,4 @@
-# Tag
+### Tag
 
 Tag is a useful function to select any DOM element using selectors. Tag will always return a list of elements, that you can map, sort, and filter as any other list.
 
@@ -17,7 +17,7 @@ Where selector is a DOM query selector.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
     <div class="myselector">

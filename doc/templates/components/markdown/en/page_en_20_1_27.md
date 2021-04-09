@@ -1,4 +1,4 @@
-# serviceLoader
+### serviceLoader
 Loads a service instance and returns a promise that is resolved when the service has a successful response load and is rejected when it fails loading the response.
 
 #### Usage:

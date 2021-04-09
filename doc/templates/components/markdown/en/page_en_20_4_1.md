@@ -1,4 +1,4 @@
-# Start serving your files with QCObjects
+### Start serving your files with QCObjects
 
 To start using the QCObjects HTTP2 Built-In Server, you just go to your project path and execute the following command line in your bash shell:
 
@@ -8,7 +8,7 @@ To start using the QCObjects HTTP2 Built-In Server, you just go to your project 
 
 or
 
-```shell
+```
 > qcobjects-server
 ```
 

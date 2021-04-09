@@ -1,4 +1,4 @@
-# Component Class
+### Component Class
 A QCObjects class type for components.
 
 #### Properties

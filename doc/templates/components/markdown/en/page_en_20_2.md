@@ -1,4 +1,4 @@
-# List and Math Functions
+## List and Math Functions
 
 ### ArrayList
 
