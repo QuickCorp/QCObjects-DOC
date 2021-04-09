@@ -1,8 +1,10 @@
 ![logo](https://qcobjects.dev/qcobjects_01.png)
 
-[![GitHub license](https://img.shields.io/github/license/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/blob/master/LICENSE.txt) [![](https://data.jsdelivr.com/v1/package/npm/qcobjects/badge)](https://www.jsdelivr.com/package/npm/qcobjects)  [![Badge for version for Visual Studio Code extension Quickcorp.QCObjects-vscode](https://vsmarketplacebadge.apphb.com/version/Quickcorp.QCObjects-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode) [![Documentation Status](https://readthedocs.org/projects/qcobjects/badge/?version=latest)](https://qcobjects.readthedocs.io/?badge=latest) [![GitHub release](https://img.shields.io/github/issues/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/releases/) [![GitHub stars](https://img.shields.io/github/stars/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects) [![npm version](https://badge.fury.io/js/qcobjects.svg)](https://badge.fury.io/js/qcobjects) ![apm: version](https://flat.badgen.net/apm/v/qcobjects-syntax?params) ![docker pulls](https://img.shields.io/docker/pulls/quickcorp/qcobjects.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+[![GitHub license](https://img.shields.io/github/license/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/blob/master/LICENSE.txt) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects?ref=badge_shield) [![](https://data.jsdelivr.com/v1/package/npm/qcobjects/badge)](https://www.jsdelivr.com/package/npm/qcobjects)  [![Badge for version for Visual Studio Code extension Quickcorp.QCObjects-vscode](https://vsmarketplacebadge.apphb.com/version/Quickcorp.QCObjects-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode) [![Documentation Status](https://readthedocs.org/projects/qcobjects/badge/?version=latest)](https://qcobjects.readthedocs.io/?badge=latest) [![GitHub release](https://img.shields.io/github/issues/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects/releases/) [![GitHub stars](https://img.shields.io/github/stars/QuickCorp/QCObjects.svg)](https://github.com/QuickCorp/QCObjects) [![npm version](https://badge.fury.io/js/qcobjects.svg)](https://badge.fury.io/js/qcobjects) ![apm: version](https://flat.badgen.net/apm/v/qcobjects-syntax?params) ![docker pulls](https://img.shields.io/docker/pulls/quickcorp/qcobjects.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 [![Become a Patreon ](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/join/qcobjects?)
+
+[![QCObjects - To code fancy, clean and quick | Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=167109&theme=dark)](https://www.producthunt.com/posts/qcobjects?utm_source=badge-review&utm_medium=badge&utm_souce=badge-qcobjects#discussion-body)
 
 # QCObjects
 ------------------------------------
@@ -42,6 +44,7 @@ _________________________
 <!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [QCObjects](#qcobjects)
+- [The meaning of the name QCObjects (Do not forget the Q)](#the-meaning-of-the-name-qcobjects-do-not-forget-the-q)
 - [QCObjects Explainer Video](#qcobjects-explainer-video)
 - [Table of Contents](#table-of-contents)
 - [Principals](#principals)
@@ -51,6 +54,7 @@ _________________________
 	- [On-Demand Resources Load](#on-demand-resources-load)
 	- [Lazy-loading of images in components (use lazy-src instead of src attribute in img tag)](#lazy-loading-of-images-in-components-use-lazy-src-instead-of-src-attribute-in-img-tag)
 - [Cross Browser Javascript Framework for MVC Patterns](#cross-browser-javascript-framework-for-mvc-patterns)
+- [Install it, make a textfield or a navigate home functionality, all in just one step.](#install-it-make-a-textfield-or-a-navigate-home-functionality-all-in-just-one-step)
 - [Dynamic Components Architecture](#dynamic-components-architecture)
 - [ECMA-262 Specification](#ecma-262-specification)
 - [Copyright](#copyright)
@@ -71,6 +75,7 @@ _________________________
 	- [Installing with NPM:](#installing-with-npm)
 	- [Installing the docker playground:](#installing-the-docker-playground)
 	- [One-Step Installation Script for Ubuntu 18.x](#one-step-installation-script-for-ubuntu-18x)
+	- [One-Step Installation Script for RHEL8](#one-step-installation-script-for-rhel8)
 	- [One-Step Installation Script for macOS](#one-step-installation-script-for-macos)
 	- [Install and test QCObjects on Microsoft Windows OS](#install-and-test-qcobjects-on-microsoft-windows-os)
 	- [QCObjects Multi-Cloud Installation](#qcobjects-multi-cloud-installation)
@@ -162,10 +167,9 @@ _________________________
 	- [Options](#options)
 	- [Commands](#commands)
 	- [Use:](#use)
-- [ALPHA RISE Startup](#alpha-rise-startup)
+	- [License](#license)
 
 <!-- /TOC -->
-
 
 
 # Principals
@@ -254,6 +258,7 @@ QCObjects in installable in your computer, it comes with a CLI Tool and commands
 # Dynamic Components Architecture
 
 ![qcobjects components layout](https://qcobjects.dev/doc/img/QCObjects-Components-Layout.gif)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects?ref=badge_shield)
 
 
 # ECMA-262 Specification
@@ -298,7 +303,7 @@ The following code shows how QCObjects can manipulate canvas objects directly an
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     	<script type="text/javascript">
     		var canvas1,canvas2,canvas3,container;
         CONFIG.set('relativeImportPath','src/');
@@ -452,16 +457,22 @@ WARNING: Do this only in a fresh|blank|brandnew installation of Ubuntu 18.x, don
 
 
 ```shell
-curl -L https://qcobjects.dev/install_qcobjects_ubuntu18x.sh |sh
+curl -L https://cdn.qcobjects.dev/install_qcobjects_ubuntu18x.sh |sh
 ```
 
 WARNING: I'm not responsible for damaging your infrastructure by using an automated installation script into an unsafe network. Make sure all your repos and scripts are under HTTPS with a valid certificate. For better safe results I recommended you to download the script, edit it for your special needs and then execute it in your machine as local.
+
+## One-Step Installation Script for RHEL8
+
+```shell
+curl -L https://cdn.qcobjects.dev/install_qcobjects_rhel8.sh |sh
+```
 
 ## One-Step Installation Script for macOS
 Tested on macOS Catalina 10.15.3
 
 ```shell
-curl -L https://qcobjects.dev/install_qcobjects_macOS.sh | zsh
+curl -L https://cdn.qcobjects.dev/install_qcobjects_macOS.sh | zsh
 ```
 
 ## Install and test QCObjects on Microsoft Windows OS
@@ -519,7 +530,7 @@ A Private Image lets you build a new AMI by installing AWS Marketplace software 
 ## Using the development version code in the straight way into HTML5:
 
 ```html
-<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
 ```
 
 ## Using the CDN minified version code from jsDelivr CDN
@@ -1184,7 +1195,7 @@ Where selector is a DOM query selector.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
     <div class="myselector">
@@ -1333,7 +1344,7 @@ Sets the name of the related component instance built by QCObjects.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
       <!-- this will load the contents of ./templates/main[.tplextension] file -->
@@ -3129,3 +3140,7 @@ Import('cl.quickcorp'); # this will import your main file: cl.quickcorp.js into 
 ## Use:
    $ qcobjects-cli [command] --help
    For detailed information of a command
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FQuickCorp%2FQCObjects?ref=badge_large)

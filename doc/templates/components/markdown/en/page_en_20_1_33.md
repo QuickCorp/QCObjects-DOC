@@ -1,4 +1,4 @@
-# Timer
+### Timer
 
 **Timer** is a special implementation of **requestAnimationFrame** to emulate the creation of thread instances, so you can handle runtime paralell processing in a little bit more efficient way.
 

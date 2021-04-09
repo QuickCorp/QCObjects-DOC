@@ -1,4 +1,4 @@
-# Generating a Self-Signed Certificate with QCObjects
+### Generating a Self-Signed Certificate with QCObjects
 
 ```shell
 > qcobjects-createcert

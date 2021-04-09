@@ -1,4 +1,4 @@
-# Ready
+### Ready
 Assign a function to run after everything is done by QCObjects and after the window.onload event. Use it to prevent 'undefined' DOM objects error.
 
 #### Usage:

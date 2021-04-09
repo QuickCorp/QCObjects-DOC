@@ -1,4 +1,6 @@
 # Installing
+------------
+
 
 ## Using QCObjects with Atom:
 
@@ -34,16 +36,22 @@ WARNING: Do this only in a fresh|blank|brandnew installation of Ubuntu 18.x, don
 
 
 ```shell
-curl -L https://qcobjects.dev/install_qcobjects_ubuntu18x.sh |sh
+curl -L https://cdn.qcobjects.dev/install_qcobjects_ubuntu18x.sh |sh
 ```
 
 WARNING: I'm not responsible for damaging your infrastructure by using an automated installation script into an unsafe network. Make sure all your repos and scripts are under HTTPS with a valid certificate. For better safe results I recommended you to download the script, edit it for your special needs and then execute it in your machine as local.
+
+## One-Step Installation Script for RHEL8
+
+```shell
+curl -L https://cdn.qcobjects.dev/install_qcobjects_rhel8.sh |sh
+```
 
 ## One-Step Installation Script for macOS
 Tested on macOS Catalina 10.15.3
 
 ```shell
-curl -L https://qcobjects.dev/install_qcobjects_macOS.sh | zsh
+curl -L https://cdn.qcobjects.dev/install_qcobjects_macOS.sh | zsh
 ```
 
 ## Install and test QCObjects on Microsoft Windows OS
@@ -101,7 +109,7 @@ A Private Image lets you build a new AMI by installing AWS Marketplace software 
 ## Using the development version code in the straight way into HTML5:
 
 ```html
-<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
 ```
 
 ## Using the CDN minified version code from jsDelivr CDN
@@ -141,3 +149,4 @@ You don't need to minify QCObjects, but if you still want to use the minified co
 ```
 
 Again, Change 2.1.420 to the number of the version that you want to use.
+

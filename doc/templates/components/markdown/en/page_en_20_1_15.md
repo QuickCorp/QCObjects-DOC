@@ -1,4 +1,4 @@
-# Package
+### Package
 Defines a QCObjects package and returns it.
 
 #### Usage:

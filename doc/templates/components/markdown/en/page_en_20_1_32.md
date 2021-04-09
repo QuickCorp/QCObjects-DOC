@@ -1,4 +1,4 @@
-# Effect
+### Effect
 
 **Effect** is a super class to define custom effects.
 

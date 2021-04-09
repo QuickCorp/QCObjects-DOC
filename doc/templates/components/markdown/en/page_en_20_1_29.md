@@ -1,4 +1,4 @@
-# ConfigService
+### ConfigService
 Is a built-in Class definition to load the CONFIG settings from a config.json file
 
 #### Example:

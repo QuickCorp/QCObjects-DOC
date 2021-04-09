@@ -1,4 +1,4 @@
-# GLOBAL
+### GLOBAL
 
 **GLOBAL** is a special QCObjects class to reach the global scope. It has a set and a get method to help you to manage the internal GLOBAL properties.
 

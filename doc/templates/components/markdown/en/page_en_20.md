@@ -1,4 +1,5 @@
 # Reference
+------------
 
 ## Essentials
 Here are the essentials symbols and concepts of [QCObjects](https://qcobjects.dev) Reference
@@ -620,7 +621,7 @@ Where selector is a DOM query selector.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
     <div class="myselector">
@@ -769,7 +770,7 @@ Sets the name of the related component instance built by QCObjects.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
       <!-- this will load the contents of ./templates/main[.tplextension] file -->

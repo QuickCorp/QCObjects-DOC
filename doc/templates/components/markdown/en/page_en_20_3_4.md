@@ -1,4 +1,4 @@
-# SDK Misc Tools
+### SDK Misc Tools
 
 #### org.quickcorp.tools.canvas.CanvasTool
 

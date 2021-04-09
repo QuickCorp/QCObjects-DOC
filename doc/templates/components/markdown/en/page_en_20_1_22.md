@@ -1,4 +1,4 @@
-# Component HTML Tag
+### Component HTML Tag
 Is a HTML tag representation of a component instance. Every declaration of a `<component></component>` tag will generate a related instance of a QCObjects component. While a component tag is not an instance itself, you can even define some instance properties by setting the related tag attribute when it is available.
 
 #### Available attributes
@@ -20,7 +20,7 @@ Sets the name of the related component instance built by QCObjects.
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     </head>
     <body>
       <!-- this will load the contents of ./templates/main[.tplextension] file -->

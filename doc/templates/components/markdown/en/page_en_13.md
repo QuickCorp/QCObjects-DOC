@@ -30,7 +30,7 @@ The following code shows how QCObjects can manipulate canvas objects directly an
 <html>
     <head>
     	<title>Demo</title>
-    	<script type="text/javascript" src="https://qcobjects.dev/QCObjects.js"></script>
+    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
     	<script type="text/javascript">
     		var canvas1,canvas2,canvas3,container;
         CONFIG.set('relativeImportPath','src/');
