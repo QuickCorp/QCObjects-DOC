@@ -29,6 +29,9 @@
 
   main {width:100%;min-height:120%;}
   main > section{min-height:120%;}
+  h1, h2, h3, h4, h5, h6 {
+    overflow: auto;
+  }
 
 </style>
 
@@ -56,7 +59,7 @@
   </section>
 </main>
 <footer>
-  <component name="footer">
+  <component name="footer" shadowed=true>
     <routing path="#" name="footer"></routing>
     <routing path="" name="footer"></routing>
   </component>
