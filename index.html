@@ -19,7 +19,11 @@
     <!-- anchor linking to external file -->
     <p>This page needs JavaScript because it uses QCObjects (https://qcobjects.com)</p>
   </noscript>
-  <component name="layout-basic" data-theme="neumorphism" cached=true controllerClass="MainController">
+  <component componentClass="CubeSplashScreenComponent"
+    duration="3000" data-background="linear-gradient(270deg, rgba(248,255,255,1) 0%, rgba(243,243,255,1) 72%, rgba(236,237,237,1) 100%)"
+    data-cube_image="./doc/img/Q_web-white.png">
+  </component>
+  <component name="layout-basic" splashscreen data-theme="neumorphism" cached=true controllerClass="MainController">
   </component>
 
 <script type="text/javascript" src="doc/js/init.js"></script>
