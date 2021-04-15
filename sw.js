@@ -23,7 +23,7 @@
  * license document, but changing it is not allowed.
 */
 "use strict";
-const version = "2.2.3";
+const version = "";
 const appName = "qcobjects-docs";
 const cacheSufix = (Math.round(Date.now()/(1000*3600))).toString(); // 1 hour
 const cacheName = `qcobjects-app-${appName}-${version}-${cacheSufix}`;
@@ -75,9 +75,14 @@ self.addEventListener('install', e => {
 	"doc/css/theme/redlight/style.css",
 	"doc/css/theme/xtra/style.css",
 	"doc/img/Q_web copy.png",
+	"doc/img/Q_web-white.png",
 	"doc/img/Q_web.png",
 	"doc/img/Q_web.svg",
 	"doc/img/bookcover-qcobjects-ce-amazon.png",
+	"doc/img/home/bg_hr.png",
+	"doc/img/home/blacktocat.png",
+	"doc/img/home/icon_download.png",
+	"doc/img/home/sprite_download.png",
 	"doc/img/icons/home-icon-jma-nofill.svg",
 	"doc/img/icons/home-icon-jma.svg",
 	"doc/img/icons/home-icon.png",
@@ -90,6 +95,8 @@ self.addEventListener('install', e => {
 	"doc/img/icons/icon-72x72.png",
 	"doc/img/icons/icon-96x96.png",
 	"doc/img/installing-qcobjects.png",
+	"doc/img/logo-qcobjects-white-original.svg",
+	"doc/img/logo-qcobjects-white.svg",
 	"doc/img/logo-qcobjects.svg",
 	"doc/img/logo.png",
 	"doc/img/placeholder.svg",
