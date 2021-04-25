@@ -23,7 +23,9 @@
  * Everyone is permitted to copy and distribute verbatim copies of this
  * license document, but changing it is not allowed.
 */
+import "https://cdn.qcobjects.dev/QCObjects.js";
 
+CONFIG.set("sourceType", "module");
 /*
 * The next values are the default settings
 * You can change any value in runtime by using CONFIG.set
