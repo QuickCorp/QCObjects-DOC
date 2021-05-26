@@ -26,6 +26,7 @@
 import "https://cdn.qcobjects.dev/QCObjects.js";
 
 CONFIG.set("sourceType", "module");
+CONFIG.set('start_url','');
 /*
 * The next values are the default settings
 * You can change any value in runtime by using CONFIG.set
