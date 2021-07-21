@@ -1,5 +1,3 @@
-### Using the development version code in the straight way into HTML5:
+### QCObjects Multi-Cloud Installation
 
-```html
-<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
-```
+QCObjects is natively supported by the most famous cloud providers. In most of them, you can install it and set everything up and running in just one step.

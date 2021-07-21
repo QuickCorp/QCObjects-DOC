@@ -53,8 +53,14 @@ Component.cached=true;
  */
 
 
+
 Import("org.quickcorp.custom"); // this will load js/packages/org.quickcorp.custom.js file
 
 Ready(function (){
   // your initial code here
+  window.addEventListener ("popstate", () => {
+    if (getDocumentLayout() === "portrait") {
+      global.sideNavController.close();
+    }
+  });
 });
