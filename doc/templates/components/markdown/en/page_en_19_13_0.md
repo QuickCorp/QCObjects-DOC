@@ -1,5 +1,5 @@
-### Using UNPKG CDN
+### Using the latest non-minified version from jsDelivr CDN
 
 ```html
-<script src="https://unpkg.com/qcobjects@latest/QCObjects.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qcobjects/QCObjects.js"></script>
 ```
