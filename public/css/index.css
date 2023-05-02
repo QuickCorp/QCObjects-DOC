@@ -1,0 +1,26 @@
+/*!
+ * QCObjects SDK @VERSION
+ * https://sdk.qcobjects.com
+ *
+ *
+ * QCObjects SDK is a part of QCObjects
+ *
+ * Cross Browser Javascript Framework for MVC Patterns
+ * QuickCorp/QCObjects is licensed under the
+ * GNU Lesser General Public License v3.0
+ * [LICENSE] (https://github.com/QuickCorp/QCObjects/blob/master/LICENSE.txt)
+ *
+ * Permissions of this copyleft license are conditioned on making available
+ * complete source code of licensed works and modifications under the same
+ * license or the GNU GPLv3. Copyright and license notices must be preserved.
+ * Contributors provide an express grant of patent rights. However, a larger
+ * work using the licensed work through interfaces provided by the licensed
+ * work may be distributed under different terms and without source code for
+ * the larger work.
+ *
+ * Copyright (C) 2015 Jean Machuca,<correojean@gmail.com>
+ *
+ * Everyone is permitted to copy and distribute verbatim copies of this
+ * license document, but changing it is not allowed.
+ */main{padding:20px 20px 20%}.gridlines *{border:1px green dotted}* summary:focus,* a:focus,* button:focus{outline:none}nav{float:left;width:0;top:0;bottom:0;height:auto;padding:20px}nav>quick-component{width:0;min-height:100%;position:fixed;z-index:1;inset:0 0 10%;overflow-y:auto;background-color:#111;transition:.5s;padding-top:60px}nav>quick-component a{padding:8px 8px 8px 32px;text-decoration:none;font-size:15px;color:#ecffc7;display:block;transition:.3s}nav>quick-component a:hover{color:#f1f1f1}nav summary{list-style:none;border:none;white-space:nowrap}nav summary::-webkit-details-marker{display:none}nav details{padding:15px;background-color:#222;margin-bottom:3px}nav summary:before{content:url(../img/Q_web.svg);color:#e5f59d;margin-right:20px}nav{color:#fff}nav{text-align:justify;z-index:9}nav>button.navbtn{font-size:20px;cursor:pointer;background-color:#111;color:#fff;padding:10px 15px;border:none;top:0;left:0;position:fixed}nav>button.navbtn:after{content:"\2630"}nav>quick-component>span.closebtn{position:fixed;display:none;top:0;right:25px;font-size:36px;margin-left:50px}nav>quick-component>span.closebtn:after{content:"\d7"}nav .navcontent{padding-top:20px}nav,article{width:100%;height:auto;position:relative}nav>span.topnav{width:100%;top:0;left:0;position:fixed;height:70px;background-color:#111;overflow:hidden}nav .topnav a{float:left;display:block;text-align:center;padding:14px 16px;text-decoration:none;font-size:17px;color:#fff}nav .topnav a:hover{background-color:#312d2d}nav .topnav .login-container{float:right}input,textarea{-webkit-user-select:text}nav .topnav input[type=text],nav .topnav input[type=password]{padding:6px;margin-top:8px;font-size:17px;border:none;width:120px}nav .topnav .login-container button{float:right;padding:6px 10px;margin-top:8px;margin-right:16px;background-color:#555;font-size:17px;border:none;cursor:pointer}nav .topnav .login-container button:hover{background-color:#e6ffe6}nav form{display:grid;grid-gap:15px;grid-auto-flow:column;margin:0 auto}quick-component[name=header]{width:100%;padding-top:80px}header{background-size:contain;background-color:#111}header div{padding:0;margin:0;border-radius:7px}header div img{padding:5%}footer{position:fixed;right:0;bottom:0;left:0;padding:1rem;background:#fff7f7;z-index:10}button:not(.navbtn),input{border-radius:27px;box-shadow:0 2px 8px #00000040;outline:none}button:not(.navbtn){border:solid #fff!important;border-left:3px!important;border-right:3px!important;border-radius:7px!important;-webkit-transition-duration:.4s;transition-duration:.4s;box-shadow:0 8px 16px #0003,0 6px 20px #00000030;font-size:12px;font-family:arial,helvetica,sans-serif;padding:18px;text-decoration:none;display:inline-block;font-weight:700;color:#fff;background-color:#111}button:not(.navbtn):hover{background-color:#333}quick-component[name=signup] input[type=text],quick-component[name=signup] input[type=password]{width:80%;padding:15px;margin:5px 0 22px;display:inline-block;border:none;background:#f1f1f1}quick-component[name=signup] input[type=checkbox]{margin-left:20px}quick-component[name=signup] input[type=text]:focus,quick-component[name=signup] input[type=password]:focus{background-color:#ddd;outline:none}quick-component[name=signup] hr{border:1px solid #f1f1f1;margin-bottom:25px;width:100%!important}quick-component[name=signup] button{color:#fff;padding:14px 20px;margin:8px 0;border:none;cursor:pointer;width:100%;opacity:.9}quick-component[name=signup] button:hover{opacity:1}quick-component[name=signup] .cancelbtn{padding:14px 20px;background-color:#f44336}quick-component[name=footer] .cancelbtn,quick-component[name=footer] .signupbtn{float:left;width:45%;margin:.5%}quick-component[name=signup] .container{padding:20px;width:87%!important;height:100%}quick-component[name=signup] .clearfix:after,quick-component[name=footer] .clearfix:after{content:"";clear:both;display:table}@media screen and (max-width: 300px){quick-component[name=signup] .cancelbtn,quick-component[name=signup] .signupbtn{width:100%}}img[data-src]{filter:blur(.2em)}img:not([data-src]){filter:blur(0);transition:filter .5s}
+/*# sourceMappingURL=index.css.map */

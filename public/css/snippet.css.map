@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../build/css/snippet.css"],
+  "sourcesContent": ["\ncode.language-html,code.language-javascript, code.language-shell, code.language-json{\n    padding: 25px;\n    height: auto;\n    color: #ddd;\n  /*  background-color: #000;*/\n    border-radius: 10px;\n    font-family: monospace;\n    font-size: 18px;\n    box-sizing: border-box;\n  \n  \n  \n  }\n  \n  pre, code, pre *, code * {\n    -webkit-user-select: auto !important;\n    -moz-user-select: auto !important;\n    -ms-user-select: auto !important;\n    user-select: all !important;\n    -webkit-tap-highlight-color: yellow;\n  }\n  \n  \n  .y {\n    background-color: #ffbd2e;\n  }\n  \n  .g {\n    background-color: #27c93f;\n  }\n  \n  .r {\n    background-color: #ff5f56;\n  }\n  \n  #logo {\n    text-align: center;\n    height: 150px;\n    margin: 20px;\n  }\n  \n  .dot {\n    margin-right: 5px;\n    float: left;\n    width: 12px;\n    height: 12px;\n    border-radius: 6px;\n  }\n  "],
+  "mappings": "AACA,mFADA,aAGI,YACA,WAJJ,mBAOI,sBACA,eACA,sBAMF,sBACE,mCACA,gCACA,+BACA,0BACA,mCAIF,GACE,yBAGF,GACE,yBAGF,GACE,yBAGF,MACE,kBACA,aAtCJ,YA0CE,KACE,iBACA,WACA,WACA,YA9CJ",
+  "names": []
+}
