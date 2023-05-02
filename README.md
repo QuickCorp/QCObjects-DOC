@@ -90,61 +90,235 @@ _________________________
 	- [Using CDNJS](#using-cdnjs)
 - [Reference](#reference)
 	- [Essentials](#essentials)
-		- [QC_Object](#qcobject)
+		- [QC\_Object](#qc_object)
 		- [ComplexStorageCache](#complexstoragecache)
+			- [Usage:](#usage)
+			- [Example:](#example)
 		- [asyncLoad](#asyncload)
+			- [Usage:](#usage-1)
+			- [Example:](#example-1)
 		- [Class](#class)
-		- [QC_Append, append method](#qcappend-append-method)
-		- [The \_super\_ method](#the-super-method)
+			- [Usage:](#usage-2)
+			- [Example:](#example-2)
+		- [QC\_Append, append method](#qc_append-append-method)
+				- [Usage:](#usage-3)
+			- [Example:](#example-3)
+		- [The \_super\_ method](#the-_super_-method)
+			- [Usage:](#usage-4)
+			- [Example:](#example-4)
 		- [New](#new)
+			- [Usage:](#usage-5)
+			- [Example:](#example-5)
 		- [InheritClass](#inheritclass)
 		- [ClassFactory](#classfactory)
-		- [\_Crypt](#crypt)
+			- [Example:](#example-6)
+		- [\_Crypt](#_crypt)
+			- [Example (1):](#example-1)
+			- [Example (2):](#example-2)
 		- [GLOBAL](#global)
+			- [Example:](#example-7)
 		- [CONFIG](#config)
+			- [Usage from memory:](#usage-from-memory)
+			- [Usage from config.json:](#usage-from-configjson)
+			- [Usage from an encrypted config.json:](#usage-from-an-encrypted-configjson)
+			- [Dynamic CONFIG Settings](#dynamic-config-settings)
 		- [Processor](#processor)
+			- [Usage:](#usage-6)
+			- [Example:](#example-8)
 		- [waitUntil](#waituntil)
+			- [Usage:](#usage-7)
+			- [Example:](#example-9)
 		- [Package](#package)
+			- [Usage:](#usage-8)
+			- [Example (1):](#example-1-1)
+			- [Example (2):](#example-2-1)
 		- [Import](#import)
+			- [Usage:](#usage-9)
+			- [Example (1):](#example-1-2)
+			- [Example (2):](#example-2-2)
 		- [Export](#export)
+			- [Usage:](#usage-10)
+			- [Example:](#example-10)
 		- [Cast](#cast)
+			- [Usage:](#usage-11)
+			- [Example:](#example-11)
 		- [Tag](#tag)
+			- [Usage:](#usage-12)
+			- [Example:](#example-12)
 		- [Ready](#ready)
+			- [Usage:](#usage-13)
 		- [Component Class](#component-class)
+			- [Properties](#properties)
+			- [Methods](#methods)
 		- [Component HTML Tag](#component-html-tag)
+			- [Available attributes](#available-attributes)
+				- [The name Attribute](#the-name-attribute)
+					- [Usage:](#usage-14)
+					- [Example:](#example-13)
+				- [The cached Attribute](#the-cached-attribute)
+					- [Usage:](#usage-15)
+				- [The data property tag declaration](#the-data-property-tag-declaration)
+				- [The controllerClass Attribute](#the-controllerclass-attribute)
+					- [Usage:](#usage-16)
+				- [The viewClass Attribute](#the-viewclass-attribute)
+					- [Usage:](#usage-17)
+				- [The componentClass Attribute](#the-componentclass-attribute)
+					- [Usage:](#usage-18)
+				- [The effecClass Attribute](#the-effecclass-attribute)
+					- [Usage:](#usage-19)
+				- [The template-source Attribute](#the-template-source-attribute)
+					- [Usage:](#usage-20)
+				- [The tplextension Attribute](#the-tplextension-attribute)
+					- [Usage:](#usage-21)
+			- [ComponentURI](#componenturi)
+				- [Example:](#example-14)
+			- [componentLoader](#componentloader)
+				- [Usage:](#usage-22)
+				- [Example:](#example-15)
+			- [buildComponents](#buildcomponents)
+				- [Usage:](#usage-23)
+				- [Example:](#example-16)
 		- [Controller](#controller)
 		- [View](#view)
 		- [VO](#vo)
 		- [Service](#service)
+			- [Properties](#properties-1)
+			- [Methods](#methods-1)
 		- [serviceLoader](#serviceloader)
+			- [Usage:](#usage-24)
+			- [Example:](#example-17)
 		- [JSONService](#jsonservice)
+			- [Properties](#properties-2)
+			- [Methods](#methods-2)
+			- [Example:](#example-18)
 		- [ConfigService](#configservice)
+			- [Example:](#example-19)
 		- [SourceJS](#sourcejs)
+			- [Example:](#example-20)
 		- [SourceCSS](#sourcecss)
 		- [Effect](#effect)
+			- [Example:](#example-21)
 		- [Timer](#timer)
+			- [Example:](#example-22)
 	- [List and Math Functions](#list-and-math-functions)
 		- [ArrayList](#arraylist)
 		- [ArrayCollection](#arraycollection)
-		- [[ArrayList or Array].unique](#arraylist-or-arrayunique)
-		- [[ArrayList or Array].table](#arraylist-or-arraytable)
-		- [[ArrayList or Array].sort](#arraylist-or-arraysort)
-		- [[ArrayList or Array].sortBy](#arraylist-or-arraysortby)
-		- [[ArrayList or Array].matrix](#arraylist-or-arraymatrix)
-		- [[ArrayList or Array].matrix2d](#arraylist-or-arraymatrix2d)
-		- [[ArrayList or Array].matrix3d](#arraylist-or-arraymatrix3d)
+		- [\[ArrayList or Array\].unique](#arraylist-or-arrayunique)
+		- [\[ArrayList or Array\].table](#arraylist-or-arraytable)
+		- [\[ArrayList or Array\].sort](#arraylist-or-arraysort)
+		- [\[ArrayList or Array\].sortBy](#arraylist-or-arraysortby)
+		- [\[ArrayList or Array\].matrix](#arraylist-or-arraymatrix)
+			- [Usage](#usage-25)
+		- [\[ArrayList or Array\].matrix2d](#arraylist-or-arraymatrix2d)
+		- [\[ArrayList or Array\].matrix3d](#arraylist-or-arraymatrix3d)
 		- [range](#range)
+			- [Usage](#usage-26)
 		- [Array.sum](#arraysum)
 		- [Array.avg](#arrayavg)
 		- [Array.min](#arraymin)
 		- [Array.max](#arraymax)
 	- [SDK](#sdk)
 		- [SDK Components](#sdk-components)
+			- [org.quickcorp.components.ShadowedComponent](#orgquickcorpcomponentsshadowedcomponent)
+				- [Usage:](#usage-27)
+			- [org.quickcorp.components.FormField](#orgquickcorpcomponentsformfield)
+				- [Usage:](#usage-28)
+				- [FormField.executeBindings():](#formfieldexecutebindings)
+				- [Data Binding Event Change:](#data-binding-event-change)
+				- [Data Binding Event Blur:](#data-binding-event-blur)
+				- [Data Binding Event Focus:](#data-binding-event-focus)
+				- [Data Binding Event Keydown:](#data-binding-event-keydown)
+			- [org.quickcorp.components.ButtonField](#orgquickcorpcomponentsbuttonfield)
+				- [Usage:](#usage-29)
+			- [org.quickcorp.components.InputField](#orgquickcorpcomponentsinputfield)
+				- [Usage:](#usage-30)
+			- [org.quickcorp.components.TextField](#orgquickcorpcomponentstextfield)
+				- [Usage:](#usage-31)
+			- [org.quickcorp.components.EmailField](#orgquickcorpcomponentsemailfield)
+				- [Usage:](#usage-32)
+			- [org.quickcorp.components.GridComponent](#orgquickcorpcomponentsgridcomponent)
+				- [Usage:](#usage-33)
+				- [Example:](#example-23)
+			- [org.quickcorp.components.ModalEnclosureComponent](#orgquickcorpcomponentsmodalenclosurecomponent)
+			- [org.quickcorp.components.ModalComponent](#orgquickcorpcomponentsmodalcomponent)
+			- [org.quickcorp.components.SwaggerUIComponent](#orgquickcorpcomponentsswaggeruicomponent)
+				- [Usage:](#usage-34)
+			- [org.quickcorp.components.splashscreen.VideoSplashScreenComponent](#orgquickcorpcomponentssplashscreenvideosplashscreencomponent)
+				- [Example:](#example-24)
 		- [SDK Controllers](#sdk-controllers)
+			- [org.quickcorp.controllers.GridController](#orgquickcorpcontrollersgridcontroller)
+			- [org.quickcorp.controllers.DataGridController](#orgquickcorpcontrollersdatagridcontroller)
+				- [Usage:](#usage-35)
+				- [Example:](#example-25)
+			- [org.quickcorp.controllers.ModalController](#orgquickcorpcontrollersmodalcontroller)
+			- [org.quickcorp.controllers.FormValidations](#orgquickcorpcontrollersformvalidations)
+			- [Usage:](#usage-36)
+			- [org.quickcorp.controllers.FormController](#orgquickcorpcontrollersformcontroller)
+				- [\[FormController\].serviceClass](#formcontrollerserviceclass)
+				- [\[FormController\].formSettings](#formcontrollerformsettings)
+				- [\[FormController\].validations](#formcontrollervalidations)
+				- [Usage:](#usage-37)
+				- [\[FormController\].formSaveTouchHandler](#formcontrollerformsavetouchhandler)
+				- [A complete example of FormController](#a-complete-example-of-formcontroller)
+			- [org.quickcorp.controllers.SwaggerUIController](#orgquickcorpcontrollersswaggeruicontroller)
+				- [Usage:](#usage-38)
 		- [SDK Effects](#sdk-effects)
+			- [org.quickcorp.tools.effects.Move](#orgquickcorptoolseffectsmove)
+				- [Usage:](#usage-39)
+				- [Example:](#example-26)
+			- [org.quickcorp.tools.effects.MoveXInFromRight](#orgquickcorptoolseffectsmovexinfromright)
+				- [Usage:](#usage-40)
+				- [Example:](#example-27)
+			- [org.quickcorp.tools.effects.MoveXInFromLeft](#orgquickcorptoolseffectsmovexinfromleft)
+				- [Usage:](#usage-41)
+				- [Example:](#example-28)
+			- [org.quickcorp.tools.effects.MoveYInFromBottom](#orgquickcorptoolseffectsmoveyinfrombottom)
+				- [Usage:](#usage-42)
+				- [Example:](#example-29)
+			- [org.quickcorp.tools.effects.MoveYInFromTop](#orgquickcorptoolseffectsmoveyinfromtop)
+				- [Usage:](#usage-43)
+				- [Example:](#example-30)
+			- [org.quickcorp.tools.effects.RotateX](#orgquickcorptoolseffectsrotatex)
+				- [Usage:](#usage-44)
+				- [Example:](#example-31)
+			- [org.quickcorp.tools.effects.RotateY](#orgquickcorptoolseffectsrotatey)
+				- [Usage:](#usage-45)
+				- [Example:](#example-32)
+			- [org.quickcorp.tools.effects.RotateZ](#orgquickcorptoolseffectsrotatez)
+				- [Usage:](#usage-46)
+				- [Example:](#example-33)
+			- [org.quickcorp.tools.effects.Rotate](#orgquickcorptoolseffectsrotate)
+				- [Usage:](#usage-47)
+				- [Example:](#example-34)
+			- [org.quickcorp.tools.effects.Fade](#orgquickcorptoolseffectsfade)
+				- [Usage:](#usage-48)
+			- [org.quickcorp.tools.effects.Radius](#orgquickcorptoolseffectsradius)
+				- [Usage:](#usage-49)
+				- [Example:](#example-35)
+			- [org.quickcorp.tools.effects.Resize](#orgquickcorptoolseffectsresize)
+				- [Usage:](#usage-50)
+				- [Example:](#example-36)
+			- [org.quickcorp.tools.effects.WipeLeft](#orgquickcorptoolseffectswipeleft)
+				- [Usage:](#usage-51)
+				- [Example](#example-37)
+			- [org.quickcorp.tools.effects.WipeRight](#orgquickcorptoolseffectswiperight)
+				- [Usage:](#usage-52)
+				- [Example](#example-38)
+			- [org.quickcorp.tools.effects.WipeUp](#orgquickcorptoolseffectswipeup)
+				- [Usage:](#usage-53)
+				- [Example](#example-39)
+			- [org.quickcorp.tools.effects.WipeDown](#orgquickcorptoolseffectswipedown)
+				- [Usage:](#usage-54)
+				- [Example](#example-40)
 		- [SDK Misc Tools](#sdk-misc-tools)
+			- [org.quickcorp.tools.canvas.CanvasTool](#orgquickcorptoolscanvascanvastool)
+			- [org.quickcorp.tools.layouts.BasicLayout](#orgquickcorptoolslayoutsbasiclayout)
 		- [SDK Views](#sdk-views)
+			- [org.quickcorp.views.GridView](#orgquickcorpviewsgridview)
 		- [SDK i18n messages](#sdk-i18n-messages)
+			- [org.quickcorp.i18n\_messages.i18n\_messages](#orgquickcorpi18n_messagesi18n_messages)
+				- [Usage:](#usage-55)
+				- [Example](#example-41)
 	- [The QCObjects HTTP2 Built-In Server](#the-qcobjects-http2-built-in-server)
 		- [Start serving your files with QCObjects](#start-serving-your-files-with-qcobjects)
 		- [Principals of an N-Tier or Multitier architecture](#principals-of-an-n-tier-or-multitier-architecture)
@@ -164,7 +338,7 @@ _________________________
 	- [Step 4: Once you have done the above components declaration, you will now want to code your controllers (cl.quickcorp.controller.js)](#step-4-once-you-have-done-the-above-components-declaration-you-will-now-want-to-code-your-controllers-clquickcorpcontrollerjs)
 	- [Step 5: To use into the HTML5 code you only need to do some settings between script tags:](#step-5-to-use-into-the-html5-code-you-only-need-to-do-some-settings-between-script-tags)
 - [QCObjects CLI Tool](#qcobjects-cli-tool)
-	- [Usage](#usage)
+	- [Usage](#usage-56)
 	- [Options](#options)
 	- [Commands](#commands)
 	- [Use:](#use)
@@ -301,97 +475,34 @@ Check out a demo using raw CSS:
 The following code shows how QCObjects can manipulate canvas objects directly and inside components
 
 ```html
-<!DOCTYPE html>
-<html>
-    <head>
-    	<title>Demo</title>
-    	<script type="text/javascript" src="https://cdn.qcobjects.dev/QCObjects.js"></script>
-    	<script type="text/javascript">
-    		var canvas1,canvas2,canvas3,container;
-        CONFIG.set('relativeImportPath','src/');
+<script type="module">
+import "https://cdnjs.cloudflare.com/ajax/libs/qcobjects/2.4.55/QCObjects.js";
 
-    		/**
-    		 * Main import sentence.
-    		 */
-    		Import('cl.quickcorp',function (){
+/**
+ * Declare a Component containing a canvas element and then add it to document body
+ */
 
-    			/**
-    			 * Super Container MyOwnBody
-    			 */
-	    		Class('MyOwnBody',HTMLBodyElement,{
-	    			customAttr:'custom',
-	    			body:document.body  // breakes default body element and replace with them
-	    		});
+class CanvasComponent extends Component {
+	tplsource= "none";
 
-	    		/**
-	    		 * Another custom class definition
-	    		 */
-	    		Class('MyContainer',HTMLElement,{
-	    			width:400,
-	    			height:400,
-	    			customAttr:'custom attr container'
-	    		});
+	constructor ({name, body, width, height}){
+		body = _DOMCreateElement("canvas");
+		body.width = width;
+		body.height = height;
+		super({name,body});
+	}
+}
 
+let mycanvas = new CanvasComponent(
+	{
+		name:"mycanvas",
+		width: 400,
+		height: 400
+	});
 
-	    		/**
-	    		 * Another custom class definition
-	    		 */
-	    		Class('canvas',HTMLCanvasElement,{
-	    			customAttr:'custom'
-	    		});
+document.body.append(mycanvas);
 
-	    		/**
-	    		 * Another custom class definition
-	    		 */
-	    		Class('MyCanvas2',HTMLCanvasElement,{});
-
-	    		body = New(MyOwnBody); // binds to body
-	    		body.css({backgroundColor:'#ccc'});
-
-	    		container = Tag('container')[0].Cast(MyContainer); // cast any javascript dom object to QC_Object class
-	    		container.css({backgroundColor:'red'}); // access binding in two directions to dom objects
-
-	    		/**
-	    		 * Instance a new custom canvas
-	    		 */
-	    		canvas1 = New(canvas,{
-            width:100,
-            height:100,
-          });
-	    		canvas2 = New(canvas,{
-            width:200,
-	    			height:100,
-          });
-	    		canvas3 = New(canvas,{
-            width:300,
-	    			height:50,
-          });
-
-	    		canvas1.css({backgroundColor:'#000000'}); // like jquery and another style access
-          canvas1.body.style.backgroundColor='#000000'; // standard javascript style access
-	    		canvas2.body.style.backgroundColor='#0044AA'; // standard javascript style access
-	    		canvas3.body.style.backgroundColor='green'; // standard javascript style access
-
-	    		canvas1.append(); //append canvas1 to body
-	    		canvas2.attachIn('container'); // attach or append to specific tag containers
-	    		container.append(canvas3); // append canvas3 to custom tag binding
-
-//	    		canvas1.body.remove(); // remove canvas1 from dom
-	    		body.append(canvas3); // append canvas3 to body
-
-          // using components
-          var c1 = New(Component,{'templateURI':'templatesample.html',cached:false});
-          document.body.append(c1); // appends the c1 to the body
-
-
-    		});
-
-    	</script>
-    </head>
-    <body>
-    	<container id="contentLoader" ></container>
-    </body>
-</html>
+</script>
 ```
 
 # DevBlog
@@ -1548,21 +1659,16 @@ Loads a service instance and returns a promise that is resolved when the service
 
 #### Example:
 ```javascript
-Class('MyTestService',Service,{
-    name:'myservice',
-    external:true,
-    cached:false,
-    method:'GET',
-    headers:{'Content-Type':'application/json'},
-    url:'https://api.github.com/orgs/QuickCorp/repos',
-    withCredentials:false,
-    _new_:()=>{
-      // service instantiated
-    },
-    done:()=>{
-      // service loaded
-    }
-});
+
+class MyTestService extends Service {
+    name = 'myservice';
+    external = true;
+    cached = false;
+    method = 'GET';
+    headers = {'Content-Type':'application/json'};
+    url = 'https://api.github.com/orgs/QuickCorp/repos';
+    withCredentials:false;
+}
 var service = serviceLoader(New(MyTestService,{
   data:{param1:1}
 })).then(
@@ -1614,21 +1720,22 @@ Returns the value of a service property
 
 #### Example:
 ```javascript
-Class('MyTestJSONService',JSONService,{
-    name:'myJSONservice',
-    external:true,
-    cached:false,
-    method:'GET',
-    withCredentials:false,
-    url:'https://api.github.com/orgs/QuickCorp/repos',
-    _new_:function (){
-      // service instantiated
-      delete this.headers.charset; // do not send the charset header
-    },
-    done:function (result){
-      _super_('JSONService','done').call(this,result);
-    }
-});
+
+class MyTestJSONService extends JSONService {
+    name = 'myJSONservice';
+    external = true;
+    cached = false;
+    method = 'GET';
+    withCredentials = false;
+    url = 'https://api.github.com/orgs/QuickCorp/repos';
+
+	constructor ({headers}){
+		delete headers.charset; // do not send the charset header
+		super(...arguments); // send all arguments to super
+	}
+
+}
+
 var service = serviceLoader(New(MyTestJSONService,{
   data:{param1:1}
 })).then(
@@ -1651,26 +1758,27 @@ ConfigService.configFileName='config.json'; // it is done by default
 CONFIG.set('useConfigService',true); // using config.json for custom settings config
 ```
 
-
 ### SourceJS
 
 Use SourceJS as a static Class that is helping you to load external JS dependencies. This is commonly used to load libraries that are external and that not follow the QCObjects packages syntax.
 
 #### Example:
 ```javascript
-Class("MyNewController",Controller,{
-	_new_:function (){
-		var controller = this;
-		controller.dependencies.push(
+
+class MyNewController extends Controller {
+	dependencies = [];
+	constructor ({dependencies}){
+		dependencies.push(
 			New(SourceJS,{
 				external:false,
-				url:'doc/js/my-js-resource.js',
-				done:function(){
+				url:'doc/js/my-js-dynamic-resource.js',
+				done (){
 					logger.debug("Dependency loaded")
 				}})
 			);
+		super(...arguments);
 	}
-})
+}
 ```
 
 ### SourceCSS
@@ -1678,15 +1786,17 @@ Class("MyNewController",Controller,{
 A static Class that is used to load an external CSS resource.
 
 ```javascript
-Class("MyNewController",Controller,{
+
+class MyNewController extends Controller {
 	dependencies:[],
-	done (){
-		this.dependencies.push(New(SourceCSS,{
+	constructor ({dependencies}){
+		dependencies.push(New(SourceCSS,{
 			external:false,
-			url:CONFIG.get('basePath')+'css/my-css-resource.css'
+			url:CONFIG.get('basePath')+'css/my-dynamic-css-resource.css'
 		}));
+		super(...arguments);
 	}
-});
+}
 ```
 
 ### Effect
@@ -1696,15 +1806,16 @@ Class("MyNewController",Controller,{
 #### Example:
 
 ```javascript
-Class('CustomFade',Effect,{
-	duration:500, // milliseconds of duration
-	apply: function (){
-		// You need the following line to apply a Fade effect in runtime
-		_super_('Fade','apply').apply(this,arguments);
-	}
-})
-```
 
+class CustomFade extends Effect {
+	duration = 500; // milliseconds of duration
+	apply (){
+		// You need the following line to apply a Fade effect in runtime
+		super.apply(this,...arguments);
+	}
+
+}
+```
 
 ### Timer
 
@@ -1716,15 +1827,15 @@ NOTE: As it is currently depending in requestAnimationFrame availability it only
 
 ```javascript
 Timer.thread({
-		duration:300, // duration in milliseconds
-		timing(timeFraction,elapsed){
-			return timeFraction; // you can change this line to return a custom math function for timing
-		},
-		intervalInterceptor(progress){
-			if (progress>=100){
-				// do whatever you want here
-			}
+	duration:300, // duration in milliseconds
+	timing(timeFraction,elapsed){
+		return timeFraction; // you can change this line to return a custom math function for timing
+	},
+	intervalInterceptor(progress){
+		if (progress>=100){
+			// do whatever you want here
 		}
+	}
 });
 ```
 
@@ -2184,14 +2295,14 @@ You want to use a card to represent every profile in the list.
 So you define a CardComponent to render the picture, the name and email of an element in the list.
 
 ```javascript
-Class("CardComponent",Component,{
-	name:"card", // this will point to templates/components/card.tpl.html
-	data:{ // the value of this object will be overriden by DataGridController
+class CardComponent extends Component {
+	name = "card"; // this will point to templates/components/card.tpl.html
+	data = { // the value of this object will be overriden by DataGridController
 		name:"<name of contact>",
 		email:"email@example.com",
 		profilePicture:"img/photo.png"
-	}
-})
+	};
+}
 ```
 
 ```html
@@ -2217,8 +2328,9 @@ subcomponentClass="CardComponent">
 Last, you have to define MyListComponent to assign the dynamic data of the list.
 
 ```javascript
-Class("MyListComponent",Component,{
-	data:[
+
+class MyListComponent extends Component {
+	data = [
 		{ // the value of this object will be mapped to a subcomponent by DataGridController
 			name:"<name of contact>",
 			email:"email@example.com",
@@ -2235,7 +2347,8 @@ Class("MyListComponent",Component,{
 			profilePicture:"img/photo.png"
 		}
 	]
-})
+
+}
 ```
 
 The resulting component will be a list of **CardComponent** with the data of every profile mapped into them by **DataGridController**.
@@ -2327,35 +2440,35 @@ Below is a complete example of a definition for a Signup Form using FormControll
 
 ```javascript
 // First, define a service class that will be called on submit.
-Class('SignupClientService',JSONService,{
-	name:'signup',
-	external:true,
-	cached:false,
-	method:'POST',
-	url:Service.basePath+'createaccount',
-	withCredentials:false,
-	_new_:()=>{
-		// service instantiated
-	},
-	done:(successfulResponse)=>{
+
+class SignupClientService extends JSONService {
+	name = 'signup';
+	external = true;
+	cached = false;
+	method = 'POST';
+	url = 'createaccount'; // it will use basePath as prefix. Example: "https://localhost/createaccount"
+	withCredentials = false;
+	done ({request,service}) {
 		// service loaded
-			_super_('JSONService','done').call(successfulResponse.service,successfulResponse);
-			console.log(successfulResponse.service.JSONresponse);
+		let _ret_ = super.done({request, service});
+		logger.debug(service.JSONresponse);
+		return _ret_;
 	}
-})
+}
 ```
 
 ```javascript
 // To safe extend FormController, we extend first from Controller, then
 // we use a defaultController to instance a new FormController
-Class('SignupFormController',Controller,{
-	serviceClass: 'SignupClientService',
-	formSettings:{ /* routings that will be triggered once the serviceClass is called*/
+
+class SignupFormController extends Controller {
+	serviceClass= 'SignupClientService';
+	formSettings={ /* routings that will be triggered once the serviceClass is called*/
 		backRouting:'#',
 		loadingRouting:'#loading',
 		nextRouting:'#signupsuccessful'
-	},
-	validations: { /* validation definitions for every field in the form to be validated before submit */
+	};
+	validations= { /* validation definitions for every field in the form to be validated before submit */
 		name (){
 			return FormValidations.getDefault('name')
 		},
@@ -2367,19 +2480,22 @@ Class('SignupFormController',Controller,{
 				return (dataValue !== '')?(true):(false);
 			}
 		}
-	},
-	defaulController:null,
-	_new_:function (o){
+	};
+	defaulController= null;
+
+	constructor (o){
+		super(o);
 		o.serviceClass = this.serviceClass;
 		o.formSettings = this.formSettings;
 		o.validations = this.validations;
 		// here we instance a defaultController with a New FormController
 		// passing the o object declaration coming from the components stack building process.
 		this.defaulController = New(FormController,o);
-	},
-	done: function (){
-		// we define a custom done callback function to inject a custom behavior as well as calling the defaultController behavior
-		logger.debugEnabled=true;
+
+	}
+
+	done (){
+		super.done(...arguments);
 		var controller = this.defaulController;
 		try {
 			controller.done.call(controller);
@@ -2387,7 +2503,8 @@ Class('SignupFormController',Controller,{
 			logger.debug('Unable to execute default behavior');
 		}
 	}
-})
+
+}
 ```
 
 ```html
@@ -2453,14 +2570,14 @@ Moves a DOM object from one position to another.
 ##### Usage:
 
 ```javascript
-Move.apply(element, xfrom, yfrom, xto, yto)
+(new Move()).apply(element, xfrom, yfrom, xto, yto)
 ```
 
 ##### Example:
 
 ```javascript
 // The next line will move all the images from (0,0) to (10,10)
-Tag('img').map(img => Move.apply(img,0,0,10,10))
+Tag('img').map(img => (new Move()).apply(img,0,0,10,10))
 ```
 
 #### org.quickcorp.tools.effects.MoveXInFromRight
@@ -2470,14 +2587,14 @@ Moves an element from the right side in X axis to the original position of the o
 ##### Usage:
 
 ```javascript
-MoveXInFromRight.apply(element)
+(new MoveXInFromRight()).apply(element)
 ```
 
 ##### Example:
 
 ```javascript
 // the next line will move every canvas on the document from right side to its original position
-Tag('canvas').map(canvas => MoveXInFromRight.apply(canvas));
+Tag('canvas').map(canvas => (new MoveXInFromRight()).apply(canvas));
 ```
 
 #### org.quickcorp.tools.effects.MoveXInFromLeft
@@ -2487,14 +2604,14 @@ Moves an element from the left side in X axis to the original position of the ob
 ##### Usage:
 
 ```javascript
-MoveXInFromLeft.apply(element)
+(new MoveXInFromLeft()).apply(element)
 ```
 
 ##### Example:
 
 ```javascript
 // the next line will move every canvas on the document from left side to its original position
-Tag('canvas').map(canvas => MoveXInFromLeft.apply(canvas));
+Tag('canvas').map(canvas => (new MoveXInFromLeft()).apply(canvas));
 ```
 
 #### org.quickcorp.tools.effects.MoveYInFromBottom
@@ -2503,7 +2620,7 @@ Moves an object of the DOM from bottom to its original position using Y axis.
 
 ##### Usage:
 ```javascript
-MoveYInFromBottom.apply(element)
+(new MoveYInFromBottom()).apply(element)
 ```
 
 ##### Example:
@@ -2518,13 +2635,13 @@ Moves an object of the DOM from top to its original position using Y axis.
 
 ##### Usage:
 ```javascript
-MoveYInFromTop.apply(element)
+(new MoveYInFromTop()).apply(element)
 ```
 
 ##### Example:
 ```javascript
 // the next line will move the body of every component named "comp1" from top to its original position
-Tag('component[name=comp1]').map(componentBody => MoveYInFromTop.apply(componentBody));
+Tag('component[name=comp1]').map(componentBody => (new MoveYInFromTop()).apply(componentBody));
 ```
 
 #### org.quickcorp.tools.effects.RotateX
@@ -2533,7 +2650,7 @@ Rotates an object in X axis.
 
 ##### Usage:
 ```javascript
-RotateX.apply(element, angleFrom, angleTo)
+(new RotateX()).apply(element, angleFrom, angleTo)
 ```
 
 **angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
@@ -2541,7 +2658,7 @@ RotateX.apply(element, angleFrom, angleTo)
 ##### Example:
 ```javascript
 // the next line will rotate in X axis the div called #id from 180 degrees to 240 degrees
-Tag('div#id').map(div => RotateX.apply(div, 180, 240));
+Tag('div#id').map(div => (new RotateX()).apply(div, 180, 240));
 ```
 
 
@@ -2551,7 +2668,7 @@ Rotates an object in Y axis.
 
 ##### Usage:
 ```javascript
-RotateY.apply(element, angleFrom, angleTo)
+(new RotateY()).apply(element, angleFrom, angleTo)
 ```
 
 **angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
@@ -2559,7 +2676,7 @@ RotateY.apply(element, angleFrom, angleTo)
 ##### Example:
 ```javascript
 // the next line will rotate in Y axis the div called #id from 0 degrees to 270 degrees
-Tag('div#id').map(div => RotateY.apply(div, 0, 270));
+Tag('div#id').map(div => (new RotateY()).apply(div, 0, 270));
 ```
 
 #### org.quickcorp.tools.effects.RotateZ
@@ -2568,7 +2685,7 @@ Rotates an object in Z axis.
 
 ##### Usage:
 ```javascript
-RotateZ.apply(element, angleFrom, angleTo)
+(new RotateZ()).apply(element, angleFrom, angleTo)
 ```
 
 **angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
@@ -2576,7 +2693,7 @@ RotateZ.apply(element, angleFrom, angleTo)
 ##### Example:
 ```javascript
 // the next line will rotate in Z axis the div called #id from 0 degrees to 60 degrees
-Tag('div#id').map(div => RotateZ.apply(div, 0, 60));
+Tag('div#id').map(div => (new RotateZ()).apply(div, 0, 60));
 ```
 
 
@@ -2587,7 +2704,7 @@ Rotates an object in X, Y, Z axes. All axes will rotate in paralell at the same 
 
 ##### Usage:
 ```javascript
-Rotate.apply(element, angleFrom, angleTo)
+(new Rotate()).apply(element, angleFrom, angleTo)
 ```
 
 **angleFrom** and **angleTo** represent an angle value expressed in degrees, starting from 0 (zero) to 360.
@@ -2595,7 +2712,7 @@ Rotate.apply(element, angleFrom, angleTo)
 ##### Example:
 ```javascript
 // the next line will rotate in X, Y and Z axes the div called #id form 0 to 270 degrees
-Tag('div#id').map(div => Rotate.apply(div, 0, 270));
+Tag('div#id').map(div => (new Rotate()).apply(div, 0, 270));
 ```
 
 #### org.quickcorp.tools.effects.Fade
@@ -2605,14 +2722,14 @@ Produces a fade effect by lowering the opacity of the element.
 ##### Usage:
 
 ```javascript
-Fade.apply(element, alphaFrom, alphaTo)
+(new Fade()).apply(element, alphaFrom, alphaTo)
 ```
 
 **alphaFrom** and **alphaTo** are numbers between 0 (zero) and 1.
 
 ```javascript
 // the following line will fade a <b class="header"> element from 0.5 (mid visibility) to 1 (full visibility)
-Tag('b.header').map(header=>Fade.apply(header, 0.5, 1))
+Tag('b.header').map(header=>(new Fade()).apply(header, 0.5, 1))
 ```
 
 #### org.quickcorp.tools.effects.Radius
@@ -2621,7 +2738,7 @@ Rounds the corner of an element
 
 ##### Usage:
 ```javascript
-Radius.apply(element, radiusFrom, radiusTo)
+(new Radius()).apply(element, radiusFrom, radiusTo)
 ```
 
 **radiusFrom** and **radiusTo** are numeric values.
@@ -2629,14 +2746,14 @@ Radius.apply(element, radiusFrom, radiusTo)
 ##### Example:
 ```javascript
 // the next line will round the corners of every image in the document
-Tag('img').map(element => Radius.apply(element, 0, 100))
+Tag('img').map(element => (new Radius()).apply(element, 0, 100))
 ```
 
 #### org.quickcorp.tools.effects.Resize
 
 ##### Usage:
 ```javascript
-Resize.apply(element, scaleFrom, scaleTo)
+(new Resize()).apply(element, scaleFrom, scaleTo)
 ```
 
 **scaleFrom** and **scaleTo** are numeric values.
@@ -2646,13 +2763,13 @@ A value of 1 is regular size, a value of 2 is double size, a value between 0 and
 
 ```javascript
 // the next line will make a zoom-out effect on every image in the document
-Tag('img').map(element => Resize.apply(element, 2,0))
+Tag('img').map(element => (new Resize()).apply(element, 2,0))
 
 // the next line will make a zoom-in effect on every image in the document
-Tag('img').map(element => Resize.apply(element, 0,1))
+Tag('img').map(element => (new Resize()).apply(element, 0,1))
 
 // the next line will make a zoom-in-out effect on every image in the document
-Tag('img').map(element => Resize.apply(element, 2,1))
+Tag('img').map(element => (new Resize()).apply(element, 2,1))
 ```
 
 #### org.quickcorp.tools.effects.WipeLeft
@@ -2661,7 +2778,7 @@ Makes a Wipe effect from Left side to the origin of the element.
 
 ##### Usage:
 ```javascript
-WipeLeft.apply(element, scaleFrom, scaleTo)
+(new WipeLeft()).apply(element, scaleFrom, scaleTo)
 ```
 
 **scaleFrom** and **scaleTo** are numeric values.
@@ -2670,7 +2787,7 @@ A value of 1 is regular size, a value of 2 is double size, a value between 0 and
 ##### Example
 
 ```javascript
-Tag('img').map(element => WipeLeft.apply(element,0,1))
+Tag('img').map(element => (new WipeLeft()).apply(element,0,1))
 ```
 
 #### org.quickcorp.tools.effects.WipeRight
@@ -2678,7 +2795,7 @@ Makes a Wipe effect from right side to the origin of the element.
 
 ##### Usage:
 ```javascript
-WipeRight.apply(element, scaleFrom, scaleTo)
+(new WipeRight()).apply(element, scaleFrom, scaleTo)
 ```
 
 **scaleFrom** and **scaleTo** are numeric values.
@@ -2687,7 +2804,7 @@ A value of 1 is regular size, a value of 2 is double size, a value between 0 and
 ##### Example
 
 ```javascript
-Tag('img').map(element => WipeRight.apply(element,0,1))
+Tag('img').map(element => (new WipeRight()).apply(element,0,1))
 ```
 
 
@@ -2697,7 +2814,7 @@ Makes a Wipe effect from down to up the origin of the element.
 
 ##### Usage:
 ```javascript
-WipeUp.apply(element, scaleFrom, scaleTo)
+(new WipeUp()).apply(element, scaleFrom, scaleTo)
 ```
 
 **scaleFrom** and **scaleTo** are numeric values.
@@ -2706,7 +2823,7 @@ A value of 1 is regular size, a value of 2 is double size, a value between 0 and
 ##### Example
 
 ```javascript
-Tag('img').map(element => WipeUp.apply(element,0,1))
+Tag('img').map(element => (new WipeUp()).apply(element,0,1))
 ```
 
 #### org.quickcorp.tools.effects.WipeDown
@@ -2715,7 +2832,7 @@ Makes a Wipe effect from up to down the origin of the element.
 
 ##### Usage:
 ```javascript
-WipeDown.apply(element, scaleFrom, scaleTo)
+(new WipeDown()).apply(element, scaleFrom, scaleTo)
 ```
 
 **scaleFrom** and **scaleTo** are numeric values.
@@ -2724,7 +2841,7 @@ A value of 1 is regular size, a value of 2 is double size, a value between 0 and
 ##### Example
 
 ```javascript
-Tag('img').map(element => WipeDown.apply(element,0,1))
+Tag('img').map(element => (new WipeDown()).apply(element,0,1))
 ```
 
 
@@ -2752,9 +2869,9 @@ Used to call the i18n engine.
 
 ##### Usage:
 ```javascript
-  Class('i18n_messages_<custom lang>', i18n_messages,{
-		...
-	})
+  class i18n_messages_<custom lang> extends i18n_messages {
+	...
+  }
 ```
 
 ##### Example
@@ -2762,8 +2879,8 @@ Used to call the i18n engine.
 'use strict';
 // file: js/packages/org.quickcorp.i18n_messages.es.js
 Package('org.quickcorp.i18n_messages.es', [
-  Class('i18n_messages_es', i18n_messages, {
-    messages: [
+  class i18n_messages_es extends i18n_messages {
+    messages= [
        // ... your custom language dictionary is here
       {
          "en":"This is a paragraph",
@@ -2774,12 +2891,14 @@ Package('org.quickcorp.i18n_messages.es', [
          "es":"Bienvenido a mi nueva app"
       }
     ]
-  }),
-  {
-		// the next line generates an instance of the i18n engine and attaches it automatically in the package
-    _i18n_messages_es: New(i18n_messages_es)
+
   }
 ]);
+
+// the next line generates an instance of the i18n engine and attaches it automatically in the package
+
+const _i18n_messages_es = New(ClassFactory("i18n_messages_es"));
+
 ```
 
 ## The QCObjects HTTP2 Built-In Server
@@ -2883,29 +3002,36 @@ Below is an example of a microservice package definition, writen in the file org
 
 ```javascript
 'use strict';
-const fs = require('fs');
+/* Recommended to use NodeJS >= 18 */
 
 Package('cl.quickcorp.backend.signup',[
-  Class('Microservice',BackendMicroservice,{
-    body:{
-      "jsonrpc": "2.0",
-      "result": "",
-      "id": 1
-    },
-    saveToFile: function (filename,data){
+  class Microservice extends BackendMicroservice {
+	constructor ({body}){
+		body = {
+		"jsonrpc": "2.0",
+		"result": "",
+		"id": 1
+		};
+		super(...arguments);
+	}
+
+    saveToFile (filename,data){
+	  const fs = require('fs');
       logger.debug('Writing file: '+filename);
       fs.writeFile(filename, data, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
       });
-    },
-    post:function (data){
+    }
+
+    post (data){
       let submittedDataPath = CONFIG.get('dataPath'); // this is filled out from qcobjects-server
       let filename = submittedDataPath+'signup/signup'+Date.now().toString()+'.json';
       console.log('DATA RECEIVED: '+data);
       this.saveToFile(filename,data);
     }
-  })
+
+  }
 ]);
 
 ```
@@ -3004,25 +3130,31 @@ Package('cl.quickcorp',[
 
 
 Package('cl.quickcorp.service',[
-	Class('FormSubmitService',JSONService,{
-	    name:'mySubmitService',
-	    external:true,
-	    cached:false,
-	    method:'POST',
-	    withCredentials:false,
-	    url:'https://api.github.com/orgs/QuickCorp/repos',
-	    _new_:function (){
+	class FormSubmitService extends JSONService {
+	    name= 'mySubmitService';
+	    external= true;
+	    cached= false;
+	    method= 'POST';
+	    withCredentials= false;
+	    url= 'https://api.github.com/orgs/QuickCorp/repos';
+
+		constructor ({headers}){
 	      // service instantiated
-	      delete this.headers.charset; // do not send the charset header
-	    },
-	    done:function (result){
-	      _super_('JSONService','done').call(this,result);
-	    },
-			fail: function(result) {
-	      //TODO negative case
-	      console.log("***** ERROR");
+	      delete headers.charset; // do not send the charset header
+		  super({headers});
+		}
+
+		done (result){
+			super.done(result);
 	    }
-  })
+
+		fail (result) {
+			//TODO negative case
+			console.log("***** ERROR");
+			super.fail(result);
+	    }
+		
+	}
 ])
 ```
 
@@ -3049,18 +3181,12 @@ Package('cl.quickcorp.service',[
 * license document, but changing it is not allowed.
 */
 Package('cl.quickcorp.components',[
-	Class('MyCustomComponent',Component,{
-	  name:'mycustomcomponent',
-	  cached:false,
-	  controller:null,
-	  view:null,
-		templateURI:ComponentURI({
-			'COMPONENTS_BASE_PATH':Component.basePath,
-			'COMPONENT_NAME':'mycustomcomponent',
-			'TPLEXTENSION':'tpl.html',
-			'TPL_SOURCE':'default'
-		})
-	})
+	class MyCustomComponent extends Component {
+	  name = 'mycustomcomponent';
+	  cached = false;
+	  controller = null;
+	  view = null;
+	}
 ]);
 ```
 
@@ -3089,29 +3215,21 @@ Package('cl.quickcorp.components',[
 */
 "use strict";
 Package('cl.quickcorp.controller',[
-	Class('MainController',Controller,{
-		_new_:function (){
+	class MainController extends Controller{
+		constructor (){
 			//TODO: Implement
 			logger.debug('MainController Element Initialized');
+			super(...arguments);
 		}
 	}),
-	Class('MyAccountController',Controller,{
-		component: null,
-		done:function (){
-			var controller = this;
-
-
-
+	class MyAccountController extends Controller {
+		component= null;
+		done (){
+			super.done(...arguments);
 			logger.debug('MyAccountController Element Initialized');
 			this.component.body.setAttribute('loaded',true);
-
-		},
-		_new_:function (o){
-			//TODO: Implement
-			this.component = o.component;
-
 		}
-	}),
+	})
 ]);
 ```
 
@@ -3125,6 +3243,8 @@ CONFIG.set('delayForReady',1); // delay to wait before executing the first ready
 CONFIG.set('preserveComponentBodyTag',false); // don't use <componentBody></componentBody> tag
 
 Import('cl.quickcorp'); # this will import your main file: cl.quickcorp.js into js/packages/ file path
+
+/* NOTE: if you use modules, you probably may want to use import() function or import native statement from JavaScript rather than Import() function from QCObjects, that is intended to cover the feature in older versions of JavaScript. */
 </script>
 ```
 

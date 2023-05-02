@@ -1,0 +1,24 @@
+<style>
+  @import url("./css/components/button.css");
+
+  :host {
+    place-items: center;
+  }
+  .header-logo {
+    min-height:300px;
+    margin-top: 30px;
+  }
+  component[name=card]{
+   cursor: pointer;
+ }
+
+
+</style>
+<div>
+  <div class="header-logo">
+    <img alt="logo" src="img/logo-qcobjects-black.svg" width="320px" />
+  </div>
+  <deploy-grid template-source="inline" componentClass="DeployGrid">
+  </deploy-grid>
+  <doc-grid template-source="inline" componentClass="DocGrid"></doc-grid>
+</div>
