@@ -22,6 +22,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run publish:web
+      - run: npm test
+        
   # Single deploy job since we're just deploying
   deploy:
     environment:
@@ -29,14 +40,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Node
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm run publish:web
-      - run: npm test
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
