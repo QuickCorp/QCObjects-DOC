@@ -29,9 +29,9 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: 18
-      - run: npm i
-      - run: npm run publish:web
-      - run: npm test
+      - run: npm --prefix ../ i
+      - run: npm --prefix ../ run publish:web
+      - run: npm --prefix ../ test
         
   # Single deploy job since we're just deploying
   deploy:
