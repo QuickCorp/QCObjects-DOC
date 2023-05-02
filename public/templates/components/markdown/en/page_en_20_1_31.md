@@ -1,0 +1,17 @@
+### SourceCSS
+
+A static Class that is used to load an external CSS resource.
+
+```javascript
+
+class MyNewController extends Controller {
+	dependencies:[],
+	constructor ({dependencies}){
+		dependencies.push(New(SourceCSS,{
+			external:false,
+			url:CONFIG.get('basePath')+'css/my-dynamic-css-resource.css'
+		}));
+		super(...arguments);
+	}
+}
+```
