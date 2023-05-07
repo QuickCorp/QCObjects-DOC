@@ -1,6 +1,6 @@
 {
     "name": "qcobjects-docs",
-    "version": "2.3.8",
+    "version": "2.3.9",
     "description": "The official app and website for documentation of QCObjects",
     "targets": {
         "default": {
